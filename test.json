@@ -1,9 +1,9 @@
 {
-    "url": "https://raw.githubusercontent.com/KingOfBugbounty/KingOfBugBountyTips/master/swagger.yaml",
-    "urls": [
-        {
-            "url": "https://raw.githubusercontent.com/KingOfBugbounty/KingOfBugBountyTips/master/swagger.yaml",
-            "name": "Foo"
-        }
-    ]
+  "url": "https://www.rarlab.com/rar/winrar-x64-610.exe",
+  "urls": [
+    {
+      "url": "https://www.rarlab.com/rar/winrar-x64-610.exe",
+      "name": "WinRAR 64-bit"
+    }
+  ]
 }
