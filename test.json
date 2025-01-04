@@ -1,9 +1,60 @@
 {
-  "url": "https://www.rarlab.com/rar/winrar-x64-610.exe",
-  "urls": [
-    {
-      "url": "https://www.rarlab.com/rar/winrar-x64-610.exe",
-      "name": "WinRAR 64-bit"
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Exemplo de Formulário Swagger",
+    "version": "1.0.0",
+    "description": "Um exemplo de formulário criado no Swagger UI."
+  },
+  "paths": {
+    "/enviar-formulario": {
+      "post": {
+        "summary": "Enviar dados do formulário",
+        "description": "Este endpoint aceita dados de um formulário.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": {
+                    "type": "string",
+                    "description": "O nome do usuário."
+                  },
+                  "email": {
+                    "type": "string",
+                    "format": "email",
+                    "description": "O email do usuário."
+                  },
+                  "idade": {
+                    "type": "integer",
+                    "description": "A idade do usuário."
+                  }
+                },
+                "required": ["nome", "email", "idade"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Formulário enviado com sucesso.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "Formulário enviado com sucesso!"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
-  ]
+  }
 }
