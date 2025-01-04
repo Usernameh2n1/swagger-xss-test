@@ -1,0 +1,8 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "<script>alert('XSS')</script>",
+    "description": "Testando XSS no Swagger UI"
+  },
+  "paths": {}
+}
