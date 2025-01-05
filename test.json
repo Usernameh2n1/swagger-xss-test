@@ -1,3 +1,9 @@
-{
-  "example": "<div onclick='alert(\"XSS\");'>Click me!</div>"
+{ 
+    "url": "https://raw.githubusercontent.com/Usernameh2n1/name.yaml/refs/heads/main/name.yaml", 
+    "urls": [ 
+        { 
+            "url": "https://raw.githubusercontent.com/Usernameh2n1/name.yaml/refs/heads/main/name.yaml", 
+            "name": "Teste" 
+        } 
+    ] 
 }
