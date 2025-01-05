@@ -1,59 +1,8 @@
 {
-  "openapi": "3.0.0",
-  "info": {
-    "title": "Exemplo de Formulário",
-    "version": "1.0.0",
-    "description": "API de exemplo que recebe dados de um formulário"
-  },
   "paths": {
-    "/enviar-formulario": {
-      "post": {
-        "summary": "Recebe dados de um formulário",
-        "description": "Este endpoint aceita dados de um formulário enviado via POST.",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "nome": {
-                    "type": "string",
-                    "description": "O nome do usuário."
-                  },
-                  "email": {
-                    "type": "string",
-                    "format": "email",
-                    "description": "O e-mail do usuário."
-                  },
-                  "idade": {
-                    "type": "integer",
-                    "description": "A idade do usuário."
-                  }
-                },
-                "required": ["nome", "email", "idade"]
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Formulário enviado com sucesso.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "properties": {
-                    "status": {
-                      "type": "string",
-                      "example": "Formulário enviado com sucesso!"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+    "/example": {
+      "get": {
+        "summary": "<script>alert('XSS Persistente');</script>"
       }
     }
   }
