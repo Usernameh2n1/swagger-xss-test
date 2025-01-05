@@ -2,7 +2,7 @@
   "paths": {
     "/example": {
       "get": {
-        "summary": "<script>alert('XSS Persistente');</script>"
+        "description": "<svg/onload=alert('XSS SVG')>"
       }
     }
   }
