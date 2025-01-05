@@ -1,9 +1,3 @@
 {
-  "paths": {
-    "/example": {
-      "get": {
-        "description": "<svg/onload=alert('XSS SVG')>"
-      }
-    }
-  }
+  "example": "<a href='http://malicious-site.com/file.rar' download>Click here to download a file</a>"
 }
