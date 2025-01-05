@@ -1,9 +1,3 @@
-{ 
-    "url": "https://raw.githubusercontent.com/Usernameh2n1/name.yaml/refs/heads/main/name.yaml", 
-    "urls": [ 
-        { 
-            "url": "https://raw.githubusercontent.com/Usernameh2n1/name.yaml/refs/heads/main/name.yaml", 
-            "name": "Teste" 
-        } 
-    ] 
+{
+  "redirect_url": "http://malicious-website.com"
 }
